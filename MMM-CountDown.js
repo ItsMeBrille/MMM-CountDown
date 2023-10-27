@@ -2,6 +2,7 @@ Module.register("MMM-CountDown", {
     // Default module config
     defaults: {
         targetDate: "2050-12-31T00:00:00", // Replace with your target date in ISO format
+        name: "Siste skoledag", // Replace with your target date in ISO format
     },
 
     // Override the start method.
@@ -24,7 +25,7 @@ Module.register("MMM-CountDown", {
         countdownText.className = "countdown-text small";
 
         if (this.countdown > 0) {
-            countdownText.innerHTML = `Siste skoledag er <span class="rainbow">${this.countdown}</span> timer unna`;
+            countdownText.innerHTML = `${this.config.name} er <span class="rainbow">${this.countdown}</span> timer unna`;
         } else {
             countdownText.innerHTML = "Tiden er ute!";
         }

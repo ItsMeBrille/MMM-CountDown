@@ -22,6 +22,7 @@ To use MMM-CountDown, add it to the modules array in your MagicMirror2 config fi
   position: "top_left",
   config: {
     targetDate: "2023-12-31T00:00:00", // Replace with your target date in ISO format
+    name: "Siste skoledag",
   },
 },
 ```
