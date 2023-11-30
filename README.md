@@ -2,6 +2,8 @@
 
 MMM-CountDown is yet another MagicMirror2 module that displays a countdown in hours toward a specific date. Norwegian language
 
+![Screenshot](screenshot.png)
+
 ## Installation
 
 Navigate to the `MagicMirror/modules` directory and clone this repository:
