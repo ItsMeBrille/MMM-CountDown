@@ -1,0 +1,20 @@
+{
+  "name": "MMM-CountDown",
+  "version": "1.0.0",
+  "description": "MMM-CountDown is aMagicMirror2 module that displays a countdown in hours toward a specific date. Norwegian language",
+  "main": "MMM-CountDown.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ItsMeBrille/MMM-CountDown.git"
+  },
+  "keywords": [
+    "Magic Mirror",
+    "count down",
+  ],
+  "author": "ItsMeBrille",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ItsMeBrille/MMM-CountDown/issues"
+  },
+  "homepage": "https://github.com/ItsMeBrille/MMM-CountDown"
+}
