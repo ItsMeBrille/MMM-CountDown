@@ -1,8 +1,9 @@
 Module.register("MMM-CountDown", {
     // Default module config
     defaults: {
-        targetDate: "2050-12-31T00:00:00", // Replace with your target date in ISO format
-        countdownItem: "Siste skoledag", // "*** er ##### timer unna
+        targetDate: "2062-01-01",
+        text: "Halleys comet is $ hours away",
+        endtext: "Its here now",
     },
 
     // Override the start method.
@@ -24,15 +25,13 @@ Module.register("MMM-CountDown", {
         var countdownText = document.createElement("div");
         countdownText.className = "countdown-text small";
 
-        if (this.countdown > 0) {
-            countdownText.innerHTML = `${this.config.countdownItem} er <span class="rainbow">${this.countdown}</span> timer unna`;
-        } else {
-            countdownText.innerHTML = "Tiden er ute!";
+        if (this.countdown < 0) {
+            countdownText.innerHTML = this.config.endtext;
+            return wrapper.appendChild(countdownText);
         }
-
-        wrapper.appendChild(countdownText);
-
-        return wrapper;
+        
+        countdownText.innerHTML = this.config.text.replace("$", `<span class="rainbow">${this.countdown}</span>`);
+        return wrapper.appendChild(countdownText);
     },
 
     // Override the notificationReceived method to handle updates from other modules
