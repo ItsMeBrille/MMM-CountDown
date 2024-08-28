@@ -1,6 +1,6 @@
 # MMM-CountDown
 
-MMM-CountDown is yet another MagicMirror2 module that displays a countdown in hours toward a specific date. Norwegian language
+MMM-CountDown is yet another MagicMirror2 module that displays a countdown in hours toward a specific date.
 
 ![Screenshot](screenshot.png)
 
@@ -23,9 +23,9 @@ To use MMM-CountDown, add it to the modules array in your MagicMirror2 config fi
   module: "MMM-CountDown",
   position: "top_left",
   config: {
-      targetDate: "2062-01-01T00:00:00", // Replace with your target date in ISO format
-      text: "Halleys comet is $ hours away",
-      endtext: "Its now",
+      targetDate: "2062-01-01T00:00:00", // Replace with your target date in this format
+      text: "Halleys comet is $ hours away", // The $ symbol will be replaced
+      endtext: "Its now", // Optional end text
   },
 },
 ```

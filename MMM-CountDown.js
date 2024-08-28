@@ -3,7 +3,7 @@ Module.register("MMM-CountDown", {
     defaults: {
         targetDate: "2062-01-01",
         text: "Halleys comet is $ hours away",
-        endtext: "Its here now",
+        endtext: "Countdown complete",
     },
 
     // Override the start method.
